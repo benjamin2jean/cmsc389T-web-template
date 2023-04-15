@@ -1,15 +1,10 @@
 # cmsc388T-web-template
 
-## Color Family
-Light yellow: #FAF8D4
-
-Almond: #EBDCCB
-
-Dun: #C3BAAA
-
-Taupe Gray: #91818A
-
-Rose quartz: #B2A3B5
-
-## CSS
-.img -> where you can adjust image size
+## Part 1 Changes
+*Added my Introduction/Biography
+*Added Project 1 Details 
+*Added Project 2 Details
+*Added Project 3 Details 
+*Added my GitHub Profile
+*Added my LinkedIn Profile 
+*Changed some the colors to blue
