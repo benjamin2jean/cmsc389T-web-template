@@ -4,3 +4,20 @@
 #expose port 8080 and run the app
 #the docker lecture will help you complete this file 
 #there should be a total of 9 lines
+FROM node:10-alpine
+
+EXPOSE 8080
+
+COPY package.json ./
+
+COPY index.html ./
+
+RUN npm install
+
+RUN mkdir -p cmsc389Ttemp && chown -R node:node cmsc389Ttemp 
+
+USER node
+
+WORKDIR cmsc389Ttemp
+
+CMD ["node" "app.js"] 
