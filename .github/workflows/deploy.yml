@@ -15,5 +15,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd TestRepo
-            git pull
+            node app.js
