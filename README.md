@@ -8,3 +8,9 @@
 * Added my GitHub Profile
 * Added my LinkedIn Profile 
 * Changed some of the colors to blue
+
+## Part 2 Changes
+https://benjamin2jean.github.io/cmsc389T-web-template/
+
+## Part 3 Changes
+https://terpconnect.umd.edu/~bjean/cmsc389T-web-template/
