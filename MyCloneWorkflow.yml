@@ -14,5 +14,5 @@ name: clone workflow
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            git clone cmsc389T-web-template
+            git clone git@github.com:benjamin2jean/cmsc389T-web-template.git
 
