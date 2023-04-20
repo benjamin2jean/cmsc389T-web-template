@@ -6,18 +6,20 @@
 #there should be a total of 9 lines
 FROM node:10-alpine
 
-EXPOSE 8080
+RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
-COPY package.json ./
+WORKDIR /home/node/app
 
-COPY index.html ./
-
-RUN npm install
-
-RUN mkdir -p cmsc389Ttemp && chown -R node:node cmsc389Ttemp 
+COPY package*.json ./
 
 USER node
 
-WORKDIR cmsc389Ttemp
+RUN npm install
 
-CMD ["node" "app.js"] 
+COPY --chown=node:node . .
+
+RUN npm install
+
+EXPOSE 8080
+
+CMD ["node", "app.js"] 
