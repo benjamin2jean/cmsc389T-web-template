@@ -6,6 +6,8 @@ services:
       #New additions
       context: .
       dockerfile: Dockerfile
+    image: nodejs
+    container_name: nodejs
     #fill out the configuration here
     networks:
       - app-network
